@@ -11,7 +11,7 @@ class Minisql < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/RichardKnop/minisql/releases/download/v1.0.0/minisql_1.0.0_darwin_amd64.tar.gz"
-      sha256 "8abac92422b256bbfb6d7edcee554c03a36252866127e603d8faaa4981330c28"
+      sha256 "9cd6574cc8b67a59912988eaa93bf54058b1de2c5ed40bf4f7562d6e22822a15"
 
       define_method(:install) do
         bin.install "minisql"
@@ -19,7 +19,7 @@ class Minisql < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/RichardKnop/minisql/releases/download/v1.0.0/minisql_1.0.0_darwin_arm64.tar.gz"
-      sha256 "21fbb9f21f5ee5d488c14b1b4c141ec454182f35691e8c812cd4c029e81518f4"
+      sha256 "3d5ddf559ff801f04455bce0981fea592d9640440fc2a70aef9d5b524a4dbff5"
 
       define_method(:install) do
         bin.install "minisql"
@@ -30,14 +30,14 @@ class Minisql < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/RichardKnop/minisql/releases/download/v1.0.0/minisql_1.0.0_linux_amd64.tar.gz"
-      sha256 "e0216f42f192c87ff09fa15dadd7531a3d91c4fc3199714ee149bd11e4e25ae7"
+      sha256 "551d571b5728a80c42c3598c4284a7957c26d74f1362177cb030bfb6d31bf6a2"
       define_method(:install) do
         bin.install "minisql"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/RichardKnop/minisql/releases/download/v1.0.0/minisql_1.0.0_linux_arm64.tar.gz"
-      sha256 "e72cb823f20fd341a3ecbfd3f541cf1d0dedd9631b408b65e3e00fb3a4175c30"
+      sha256 "bc209d29c0207706cf09d430f0817098d44691751915e6ddf7e5873bc54fca08"
       define_method(:install) do
         bin.install "minisql"
       end
