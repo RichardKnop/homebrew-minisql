@@ -5,21 +5,21 @@
 class Minisql < Formula
   desc "Embedded single-file SQL database in pure Go — faster than SQLite on latency benchmarks."
   homepage "https://github.com/RichardKnop/minisql"
-  version "1.0.1"
+  version "1.0.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/RichardKnop/minisql/releases/download/v1.0.1/minisql_1.0.1_darwin_amd64.tar.gz"
-      sha256 "394cd41bb10849c045477c6744fd9ed2a0baf2281abc82c4a35b8d710930baac"
+      url "https://github.com/RichardKnop/minisql/releases/download/v1.0.2/minisql_1.0.2_darwin_amd64.tar.gz"
+      sha256 "825fb984b9c02f59d1281cf49473bcfdacec64239897ba80c0f852db87098879"
 
       define_method(:install) do
         bin.install "minisql"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/RichardKnop/minisql/releases/download/v1.0.1/minisql_1.0.1_darwin_arm64.tar.gz"
-      sha256 "16f6091a80144dfa3863166045b3c32cf78b85aeeb2dd3086b944bd13e7c8252"
+      url "https://github.com/RichardKnop/minisql/releases/download/v1.0.2/minisql_1.0.2_darwin_arm64.tar.gz"
+      sha256 "b699be15425be92e5e02b44a362420de64cf53a092cf5c6acf6da9332056b031"
 
       define_method(:install) do
         bin.install "minisql"
@@ -29,15 +29,15 @@ class Minisql < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RichardKnop/minisql/releases/download/v1.0.1/minisql_1.0.1_linux_amd64.tar.gz"
-      sha256 "9af75b936bedf895d9122a937ce3bb799ff172765b165e32ac52b5494d712ffe"
+      url "https://github.com/RichardKnop/minisql/releases/download/v1.0.2/minisql_1.0.2_linux_amd64.tar.gz"
+      sha256 "1a29d0187774b31561dd32963f8579a55d4ac437d2694c43528b4e676d96ed75"
       define_method(:install) do
         bin.install "minisql"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RichardKnop/minisql/releases/download/v1.0.1/minisql_1.0.1_linux_arm64.tar.gz"
-      sha256 "0d590477a1bd3b79629ad455a0b78e9377603a37314c400bdb7d9fc457bf23f4"
+      url "https://github.com/RichardKnop/minisql/releases/download/v1.0.2/minisql_1.0.2_linux_arm64.tar.gz"
+      sha256 "ceff359aaac0322f5b5e8b5f1c414980d38d699e828adab8a0d3e860d57daf30"
       define_method(:install) do
         bin.install "minisql"
       end
